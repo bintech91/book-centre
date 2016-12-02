@@ -1,0 +1,62 @@
+''@startuml
+
+package "BookMQSystem" {
+    configuration - [RabbitMQ]
+    [RabbitMQManager] --> configuration
+}
+
+package "BookManager" {
+    [BookCrawlRequest]
+    [BookCrawlResponse]
+    [BookGetRequest]
+    [BookGetResponse]
+    [BookPutRequest]
+    [BookPutResponse]
+}
+
+package "BookCrawlStorage" {
+    [MetaCrawlItem]
+    [MongoMetaCrawlStorage]
+    [RedisMetaCrawlCaching] --> MetaCrawlItem
+    MetaCrawlItem - [MongoMetaCrawlStorage]
+}
+
+package "BookStorage" {
+    [StorageMetaItem]
+    [StorageContentItem]
+    [MongoMetaStorage]
+    [RedisMetaCaching]
+    [GDriveContentStorage]
+}
+
+package "BookDupExecutor" {
+    MetaCrawlItem -[DupMetaExecutor]
+    [DupMetaExecutor] --> MetaCrawlItem
+    [RedisMetaCrawlCaching] - MetaCrawlItem
+}
+
+package "BookMetaCrawler"{
+    [MetaCrawler] --> MetaCrawlItem
+    MetaCrawlItem - [MongoMetaCrawlStorage]
+
+    [MetaCrawler] --> MetaCrawlItem
+    MetaCrawlItem - [RabbitMQ]
+
+    [MetaCrawler] --> MetaCrawlItem
+    MetaCrawlItem - [DupMetaExecutor]
+}
+
+package "BookContentCrawler" {
+    MetaCrawlItem - [ContentCrawler]
+    [RabbitMQ] --> MetaCrawlItem
+
+    download_url - [ContentDownloader]
+    [ContentCrawler] --> download_url
+
+    [ContentDownloader] --> StorageMetaItem
+    [ContentDownloader] --> StorageContentItem
+    StorageMetaItem - [MongoMetaStorage]
+    StorageContentItem - [GDriveContentStorage]
+}
+
+@enduml

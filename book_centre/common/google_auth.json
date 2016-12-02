@@ -1,0 +1,16 @@
+{
+  "web": {
+    "client_id": "505318322498-23edbu6kp53j9bate77qcihs6r8f8bae.apps.googleusercontent.com",
+    "project_id": "bookcentre-148202",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "k18gw0FN4xwHzkQrgkWODgc-",
+    "redirect_uris": [
+      "http://localhost:8080/"
+    ],
+    "javascript_origins": [
+      "http://localhost:8080"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  //database configuration
+  "mongo_book_storage_host": "0.0.0.0",
+  "mongo_book_storage_port": "2009"
+
+  "thrift_http"
+}

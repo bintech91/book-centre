@@ -1,0 +1,19 @@
+{
+  "StorageThriftServer": {
+    "host": "0.0.0.0",
+    "port": 27017,
+    "thread_num": 16
+  },
+  "MongoBookStorage": {
+    "name": "book_storage",
+    "username": "username",
+    "password": "password",
+    "host": "0.0.0.0",
+    "port": 27017
+  },
+  "RedisBookIdStorage": {
+    "password": "password",
+    "host": "0.0.0.0",
+    "port": 27017
+  }
+}

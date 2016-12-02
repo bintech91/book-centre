@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../python/SinaSpider/.idea/SinaSpider.iml" filepath="$PROJECT_DIR$/../../../python/SinaSpider/.idea/SinaSpider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../book_content_crawler/.idea/book_content_crawler.iml" filepath="$PROJECT_DIR$/../book_content_crawler/.idea/book_content_crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../book_crawler_storage/.idea/book_crawler_storage.iml" filepath="$PROJECT_DIR$/../book_crawler_storage/.idea/book_crawler_storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/book_meta_crawler.iml" filepath="$PROJECT_DIR$/.idea/book_meta_crawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../book_storage/.idea/book_storage.iml" filepath="$PROJECT_DIR$/../book_storage/.idea/book_storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../common/.idea/common.iml" filepath="$PROJECT_DIR$/../common/.idea/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../diagram/.idea/diagram.iml" filepath="$PROJECT_DIR$/../../diagram/.idea/diagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../docs/.idea/docs.iml" filepath="$PROJECT_DIR$/../../docs/.idea/docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../python/zdn-load-test-mp3/.idea/zdn-load-test-mp3.iml" filepath="$PROJECT_DIR$/../../../python/zdn-load-test-mp3/.idea/zdn-load-test-mp3.iml" />
+    </modules>
+  </component>
+</project>

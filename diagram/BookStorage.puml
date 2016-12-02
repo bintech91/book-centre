@@ -1,0 +1,69 @@
+@startuml
+
+class BookIdentifer {
+    String identifier
+    String issn
+    String asin
+    String udc
+    String lbc
+    String ddc
+    String lcc
+    String doi
+    String google_book_id
+    String open_library_id
+}
+
+class BookFileCheck {
+    String md5
+    String crc32
+    String edonkey
+    String aich
+    String sha1
+    String tth
+}
+
+class BookMeta {
+    Integer id
+    String title
+    String volumeinfo
+    String series
+    String periodical
+    String author
+    String year
+    String edition
+    String publisher
+    String city
+    String pages
+    String language
+    String topic
+    String library
+    String issue
+    Identifier identifier
+    String commentary
+    Integer dpi
+    String color
+    String cleaned
+    String orientation
+    Boolean paginated
+    Boolean scanned
+    Boolean bookmarked
+    Boolean searchable
+    Integer filesize
+    String extension
+    FileCheck filecheck
+    String generic
+    String filename
+    String visible
+    String locator
+    Integer local
+    String timeadded
+    String timelastmodified
+    String coverurl
+}
+
+class BookStorage {
+    Integer id
+    list<String> listURL
+}
+
+@enduml
